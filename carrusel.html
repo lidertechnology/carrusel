@@ -1,0 +1,8 @@
+<swiper-container class="mySwiper" pagination="true">
+    @for (item of conector; track $index) {
+       <swiper-slide>
+            <img src="{{item.url}}" alt="">        
+        </swiper-slide> 
+    }    
+</swiper-container>
+  
