@@ -4,7 +4,7 @@ Hemos elaborado un carrusel reusable standalone de angular con Swiperjs que leer
 La idea es que el usuario administrador pueda cambiar los banners desde un administrador general de la app.
 
 #  Pasos: 
-
+  Requerimientos:
   * Tomaremos en cuenta que ya la app esta conectada a un proyecto de Firebase.
   * Debemos instalar la biblioteca de swiperjs con el comando: npm install swiper ( para poder usarlas en nuestro componente)
 
@@ -13,3 +13,10 @@ La idea es que el usuario administrador pueda cambiar los banners desde un admin
   3. Agrega el código .HTML de este repositorio.
   4. Agrega el código .ts de de este repositorio.
   5. (opcional), si deseas personalizar tu carrusel puede usar los demos de SwiperJs en su página oficial.
+
+#  USO DEL CARRUSEL EN OTRO COMPONENTE: 
+
+ 1. Importamos el componente "CarruselComponent" en el componente donde usaremos el carrusel reusable.
+ 2. Agregamos el selector del carrusel en el HTML del componente padre:
+
+        <app-carrusel [conector]="item"></app-carrusel>
