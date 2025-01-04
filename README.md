@@ -1,10 +1,18 @@
 # Carrusel reusable con data en Firestore.
 Hemos elaborado un carrusel reusable standalone de angular con Swiperjs que leerá la data de una coleccion en Firestore llamada "Carruseles".
 
-La idea es que el usuario administrador pueda cambiar los banners desde un administrador general de la app.
+  *** La idea es que el usuario administrador pueda cambiar los banners desde un administrador general de la app. ***
 
 #  Pasos: 
   Requerimientos:
+  * En nuestra base de datos Firestore debemos crear una colección de primer nivel llamada "Banners"
+    que contendrá documentos que representan nuestros banners por separado,
+    dichos banners tendrán la siguiente estructura de datos:
+      - id: string; //que será autogenerado por firestoe de manera automatica al agregar nuevos banners.
+      - alt: string;
+      - seccion: string;
+      - url: string;
+      
   * Tomaremos en cuenta que ya la app esta conectada a un proyecto de Firebase.
   * Debemos instalar la biblioteca de swiperjs con el comando: npm install swiper ( para poder usarlas en nuestro componente)
 
