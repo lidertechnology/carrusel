@@ -16,7 +16,7 @@ Hemos elaborado un carrusel reusable standalone de angular con Swiperjs que leer
   * Tomaremos en cuenta que ya la app esta conectada a un proyecto de Firebase.
   * Debemos instalar la biblioteca de swiperjs con el comando: npm install swiper ( para poder usarlas en nuestro componente)
 
-  1. Crear una colección de primer nivel en Firestore llamada " Carruseles ".
+  1. Crear una colección de primer nivel en Firestore por ejemplo " Carruseles ".
   2. Crear un componente en la carpeta componentes llamado "carrusel", se hace co el comando "ng g c components/carrusel"
   3. Agrega el código .HTML de este repositorio.
   4. Agrega el código .ts de de este repositorio.
@@ -27,4 +27,4 @@ Hemos elaborado un carrusel reusable standalone de angular con Swiperjs que leer
  1. Importamos el componente "CarruselComponent" en el componente donde usaremos el carrusel reusable.
  2. Agregamos el selector del carrusel en el HTML del componente padre:
 
-        <app-carrusel [conector]="item"></app-carrusel>
+        <app-carrusel [conector]="carruseles()"></app-carrusel>
