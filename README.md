@@ -28,3 +28,8 @@ Hemos elaborado un carrusel reusable standalone de angular con Swiperjs que leer
  2. Agregamos el selector del carrusel en el HTML del componente padre:
 
         <app-carrusel [conector]="carruseles()"></app-carrusel>
+
+Importante: 
+El contenido que colocamos en "carrusel()" es porque usamos signals de Angular, 
+y es importante crear la variable donde se almacenará la coleccion de banners del carrusel y
+conectarla a una colección de firestore que podemos llamar como "Banners" ó "Carruseles".
